@@ -58,9 +58,10 @@ html {
 
 body {
   background-image: url(/images/bg-stars.svg);
+  background-size: auto 70%;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 h1 {
@@ -71,6 +72,10 @@ h1 {
 
 h2 {
   color: white;
+}
+
+footer {
+  height: 30%;
 }
 
 .hills {
