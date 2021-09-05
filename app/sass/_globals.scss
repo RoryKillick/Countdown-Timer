@@ -1,0 +1,23 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: $VeryDarkBlue;
+}
+
+body{
+    background-image: url(/images/bg-stars.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: $White;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2{
+    color: $White;
+}
