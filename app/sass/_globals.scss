@@ -1,16 +1,12 @@
 html {
     font-size: 100%;
+    height: 100%;
     box-sizing: border-box;
     font-family: 'Red Hat Text', sans-serif;
     background-color: $VeryDarkBlue;
 }
-
 body{
-    background-image: url(/images/bg-stars.svg);
-    background-size: auto 70%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 100%;
 }
 
 h1{
@@ -21,4 +17,7 @@ h1{
 
 h2{
     color: $White;
+}
+.stars{
+    z-index: 1;
 }
