@@ -80,9 +80,8 @@ footer {
 
 .hills {
   position: fixed;
-  bottom: 0em;
+  bottom: 0rem;
   max-height: 30%;
-  left: -245%;
   z-index: 1;
 }
 
@@ -94,7 +93,7 @@ nav {
   right: 0;
   text-align: center;
   bottom: 8%;
-  width: 70%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +103,17 @@ nav {
   z-index: 2;
 }
 
-.fb .insta .pinterest {
-  display: inline-block;
+nav svg {
+  fill: #8385A9;
+}
+
+nav svg:hover {
+  fill: #fb6087;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fb .insta .pinterest:hover {
+  outline: 1px red solid;
 }
 /*# sourceMappingURL=styles.css.map */

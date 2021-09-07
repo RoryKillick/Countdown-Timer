@@ -21,8 +21,18 @@ nav{
     display: flex;
     justify-content: space-evenly;
     z-index: 2;
+
+    svg{
+        fill:#8385A9;
+    }
+
+    svg:hover{
+        fill: $SoftRed;
+        transition: 0.5s;
+    }
 }
 
-.fb .insta .pinterest {
-    display: inline-block;
+.fb .insta .pinterest:hover {
+    //color:$SoftRed;
+    outline: 1px red solid;
 }
