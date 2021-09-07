@@ -61,12 +61,6 @@ body {
   height: 100%;
 }
 
-h1 {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 h2 {
   color: white;
 }
@@ -79,6 +73,37 @@ main {
   height: 70%;
   background-image: url(/images/bg-stars.svg);
   background-size: auto 100%;
+}
+
+main div {
+  margin: 10rem auto;
+  width: 90%;
+}
+
+main h1 {
+  letter-spacing: 0.5em;
+  position: relative;
+  top: 30%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+main h2 {
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  color: #8486a9;
+}
+
+main .units {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
@@ -114,7 +139,7 @@ nav svg {
   fill: #8385A9;
 }
 
-nav svg:hover {
+nav a:hover {
   fill: #fb6087;
   -webkit-transition: 0.5s;
   transition: 0.5s;
