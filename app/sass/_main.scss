@@ -3,30 +3,86 @@ main{
     background-image: url(/images/bg-stars.svg);
     background-size: auto 100%;
 
-    div{
-        margin: 10rem auto;
+    .container {
+        margin: auto;
         //outline: 1px red solid;
         width: 90%;
-    }
-
-    h1{
-        letter-spacing: 0.5em;
-        position: relative;
-        top: 30%;
-        color: $White;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    h2{
-        letter-spacing: 0.5em;
-        text-transform: uppercase;
-        font-size: 0.4em;
-        color: $GrayishBlue;
-    }
-    .units{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+
+        }
+
+        .flip-card-container {
+            padding: 1rem;
+            position: relative;
+        }
+
+        .flip-card {
+            position: relative;
+            width:5rem;
+            height: 5rem;
+            //outline: 1px green solid;
+
+            & .number {
+                //outline: 1px red solid;
+                color: $SoftRed;
+                width: initial;
+                position: absolute;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 4;
+                font-size: 2.5rem;
+                letter-spacing: 0em;
+            }
+        }
+        
+        .flip-card-top {
+            background-color: $DarkBlue;
+            opacity: 0.75;
+            border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+
+            h2{
+                color: $SoftRed;
+            }
+        }
+
+        .flip-card-bottom {
+            background-color: $DarkBlue;
+            border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+            box-shadow: 0rem 0.2rem $VeryVeryDarkBlue;
+            h2{
+                color: $SoftRed;
+            }
+        }
+
+        
+
+        h1 {
+            letter-spacing: 0.5em;
+            margin-top: 4rem;
+            color: $White;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            padding: 1rem;
+        }
+    
+        h2 {
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            font-size: 0.4em;
+            color: $GrayishBlue;
+            padding: 1rem;
+
+        }
+        .units {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
-}

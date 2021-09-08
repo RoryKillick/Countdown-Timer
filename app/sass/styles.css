@@ -54,7 +54,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Red Hat Text', sans-serif;
-  background-color: #1e1f29;
+  background: -webkit-gradient(linear, left top, left bottom, from(#191a24), to(#2F2439));
+  background: linear-gradient(#191a24, #2F2439);
 }
 
 body {
@@ -75,19 +76,76 @@ main {
   background-size: auto 100%;
 }
 
-main div {
-  margin: 10rem auto;
+main .container {
+  margin: auto;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+main .flip-card-container {
+  padding: 1rem;
+  position: relative;
+}
+
+main .flip-card {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+
+main .flip-card .number {
+  color: #fb6087;
+  width: initial;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 4;
+  font-size: 2.5rem;
+  letter-spacing: 0em;
+}
+
+main .flip-card-top {
+  background-color: #343650;
+  opacity: 0.75;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+main .flip-card-top h2 {
+  color: #fb6087;
+}
+
+main .flip-card-bottom {
+  background-color: #343650;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+  -webkit-box-shadow: 0rem 0.2rem #191a24;
+          box-shadow: 0rem 0.2rem #191a24;
+}
+
+main .flip-card-bottom h2 {
+  color: #fb6087;
 }
 
 main h1 {
   letter-spacing: 0.5em;
-  position: relative;
-  top: 30%;
+  margin-top: 4rem;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  padding: 1rem;
 }
 
 main h2 {
@@ -95,12 +153,17 @@ main h2 {
   text-transform: uppercase;
   font-size: 0.4em;
   color: #8486a9;
+  padding: 1rem;
 }
 
 main .units {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -118,7 +181,7 @@ footer {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -139,7 +202,7 @@ nav svg {
   fill: #8385A9;
 }
 
-nav a:hover {
+nav svg:hover {
   fill: #fb6087;
   -webkit-transition: 0.5s;
   transition: 0.5s;

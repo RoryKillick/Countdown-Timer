@@ -10,7 +10,7 @@ footer{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -26,7 +26,7 @@ nav{
         fill:#8385A9;
     }
 
-    a:hover{
+    svg:hover{
         fill: $SoftRed;
         transition: 0.5s;
     }
