@@ -70,6 +70,16 @@ main {
   height: 70%;
   background-image: url(/images/bg-stars.svg);
   background-size: auto 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   /*.units {
         display: flex;
         flex-direction: row;
@@ -94,7 +104,7 @@ main .container {
 }
 
 main .flip-card-container {
-  padding: 1rem;
+  padding: 2em 1em;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,12 +153,12 @@ main .flip-card .flip-card-bottom {
 
 main h1 {
   letter-spacing: 0.5em;
-  margin-top: 4rem;
+  line-height: 1.5em;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  padding: 1rem;
+  padding: 1em;
 }
 
 main h3 {
