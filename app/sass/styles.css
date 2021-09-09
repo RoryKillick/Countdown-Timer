@@ -62,10 +62,6 @@ body {
   height: 100%;
 }
 
-h2 {
-  color: white;
-}
-
 .stars {
   z-index: 1;
 }
@@ -74,6 +70,11 @@ main {
   height: 70%;
   background-image: url(/images/bg-stars.svg);
   background-size: auto 100%;
+  /*.units {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }*/
 }
 
 main .container {
@@ -95,44 +96,44 @@ main .container {
 main .flip-card-container {
   padding: 1rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .flip-card {
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   text-align: center;
-}
-
-main .flip-card .number {
-  color: #fb6087;
-  width: initial;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 4;
-  font-size: 2.5rem;
-  letter-spacing: 0em;
 }
 
 main .flip-card h2 {
+  color: #fb6087;
+  width: initial;
   position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  font-size: 2.2rem;
+  letter-spacing: 0em;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-main .flip-card-top {
+main .flip-card .flip-card-top {
   background-color: #343650;
   opacity: 0.75;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
   height: 50%;
 }
 
-main .flip-card-bottom {
+main .flip-card .flip-card-bottom {
   background-color: #343650;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
   -webkit-box-shadow: 0rem 0.2rem #191a24;
@@ -150,29 +151,13 @@ main h1 {
   padding: 1rem;
 }
 
-main h2 {
-  color: #fb6087;
-}
-
 main h3 {
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-size: 0.4em;
   color: #8486a9;
-  padding: 1rem;
-}
-
-main .units {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 footer {

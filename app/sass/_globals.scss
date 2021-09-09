@@ -5,14 +5,11 @@ html {
     font-family: 'Red Hat Text', sans-serif;
     background: linear-gradient($VeryVeryDarkBlue, #2F2439);
 }
-body{
+
+body {
     height: 100%;
 }
 
-
-h2{
-    color: $White;
-}
-.stars{
+.stars {
     z-index: 1;
 }
