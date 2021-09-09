@@ -22,10 +22,11 @@ main{
         .flip-card {
             position: relative;
             width:5rem;
-            height: 5rem;
+            height: 5rem; //maybe dangerous to use height in css!
+            text-align: center;
             //outline: 1px green solid;
 
-            & .number {
+            .number {
                 //outline: 1px red solid;
                 color: $SoftRed;
                 width: initial;
@@ -39,25 +40,28 @@ main{
                 font-size: 2.5rem;
                 letter-spacing: 0em;
             }
+
+            h2{
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
         }
         
         .flip-card-top {
             background-color: $DarkBlue;
             opacity: 0.75;
             border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+            height: 50%;
 
-            h2{
-                color: $SoftRed;
-            }
+           
         }
 
         .flip-card-bottom {
             background-color: $DarkBlue;
             border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
             box-shadow: 0rem 0.2rem $VeryVeryDarkBlue;
-            h2{
-                color: $SoftRed;
-            }
+            height: 50%;
         }
 
         
@@ -73,12 +77,15 @@ main{
         }
     
         h2 {
+            color: $SoftRed;
+        }
+
+        h3 {
             letter-spacing: 0.5em;
             text-transform: uppercase;
             font-size: 0.4em;
             color: $GrayishBlue;
             padding: 1rem;
-
         }
         .units {
             display: flex;

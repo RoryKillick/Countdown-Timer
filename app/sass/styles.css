@@ -101,6 +101,7 @@ main .flip-card {
   position: relative;
   width: 5rem;
   height: 5rem;
+  text-align: center;
 }
 
 main .flip-card .number {
@@ -117,14 +118,18 @@ main .flip-card .number {
   letter-spacing: 0em;
 }
 
+main .flip-card h2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 main .flip-card-top {
   background-color: #343650;
   opacity: 0.75;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
-}
-
-main .flip-card-top h2 {
-  color: #fb6087;
+  height: 50%;
 }
 
 main .flip-card-bottom {
@@ -132,10 +137,7 @@ main .flip-card-bottom {
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
   -webkit-box-shadow: 0rem 0.2rem #191a24;
           box-shadow: 0rem 0.2rem #191a24;
-}
-
-main .flip-card-bottom h2 {
-  color: #fb6087;
+  height: 50%;
 }
 
 main h1 {
@@ -149,6 +151,10 @@ main h1 {
 }
 
 main h2 {
+  color: #fb6087;
+}
+
+main h3 {
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-size: 0.4em;
