@@ -9,11 +9,12 @@ main {
     .container {
         margin: auto;
         //outline: 1px red solid;
-        width: 90%;
+        //width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         position: relative;
+        //max-width: 80%;
     }
 
     .flip-card-container {
@@ -24,9 +25,11 @@ main {
     }
 
     .flip-card {
+        min-width: 4rem;
+        max-width: 8rem;
+        min-height: 4rem; 
+        max-width: 8rem;//maybe dangerous to use height in css!
         position: relative;
-        width: 4rem;
-        height: 4rem; //maybe dangerous to use height in css!
         text-align: center;
         //outline: 1px green solid;
 
@@ -83,7 +86,6 @@ main {
             background-color: $VeryVeryDarkBlue;
             position: relative;
             bottom: 10%;
-
         }
     }
         
