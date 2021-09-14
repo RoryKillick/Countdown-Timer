@@ -7,31 +7,34 @@ main {
     justify-content: space-evenly;
 
     .container {
-        margin: auto;
-        //outline: 1px red solid;
-        //width: 90%;
+        //margin: auto;
+        outline: 1px green solid;
+        height: 100%;
+        //width: max(600rem, 50%);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         position: relative;
-        //max-width: 80%;
+        //max-width: 50%;
     }
 
     .flip-card-container {
+        outline: 1px red solid;
         padding: 2em 1em;
+        //height: 100%;
+        //width: max(60rem, 50%);
         position: relative;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .flip-card {
-        min-width: 4rem;
-        max-width: 8rem;
-        min-height: 4rem; 
-        max-width: 8rem;//maybe dangerous to use height in css!
+        width: 4rem;
+        height: 4rem;
         position: relative;
         text-align: center;
-        //outline: 1px green solid;
+        outline: 1px green solid;
 
         h2 {
             color: $SoftRed;
@@ -42,7 +45,7 @@ main {
             left: 0;
             right: 0;
             z-index: 4;
-            font-size: 2.2rem;
+            font-size: 8vw;
             letter-spacing: 0em;
             //center vertically
             top: 50%;
@@ -90,6 +93,7 @@ main {
     }
         
     h1 {
+        outline: 1px blue solid;
         letter-spacing: 0.5em;
         line-height: 1.5em;
         color: $White;
@@ -103,7 +107,7 @@ main {
         //outline: 1px red solid;
         letter-spacing: 0.5em;
         text-transform: uppercase;
-        font-size: 0.4em;
+        font-size: 40%;
         color: $GrayishBlue;
         margin-top: 1em;
         padding: 1em;
