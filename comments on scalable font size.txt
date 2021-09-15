@@ -1,0 +1,5 @@
+//minimum font = 2 rem; maximum font = 4rem / minimum vw = 360px or 22.5rem maximum vw = 1400px or 87.5rem
+            //slope =  calc(4 - 2) / (87.5 - 22.5) = 65
+            //yAxisIntersection = -22.5 * 65 + 2 = -1460.5
+            //preferredValue = -1460.5rem + (65*100)vw
+            //mistake in calcul
