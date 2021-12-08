@@ -1,6 +1,6 @@
 let timer = setInterval(calculateTimeRemaining = () => {
     let now = new Date().getTime();
-    const deadlineDate = new Date ('September 25, 2021 22:00:00').getTime();
+    const deadlineDate = new Date ('December 25, 2021 22:00:00').getTime();
     
     let time = deadlineDate - now
     let days = Math.floor(time / (1000*60*60*24));

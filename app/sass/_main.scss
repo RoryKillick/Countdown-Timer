@@ -45,7 +45,7 @@ main {
             left: 0;
             right: 0;
             z-index: 4;
-            font-size: 8vw;
+            font-size: 1rem;
             letter-spacing: 0em;
             //center vertically
             top: 50%;
@@ -111,6 +111,50 @@ main {
         color: $GrayishBlue;
         margin-top: 1em;
         padding: 1em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .flip-card {
+            width: 0.7rem;
+            height: 0.7rem;
+
+            h2{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .flip-card {
+            width: 1rem;
+            height: 1rem;
+
+            h2{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .flip-card {
+            width: 2rem;
+            height: 2rem;
+
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .flip-card {
+            width: 4rem;
+            height: 4rem;
+
+            h2{
+                font-size: 4rem;
+            }
+        }
     }
     /*.units {
         display: flex;
